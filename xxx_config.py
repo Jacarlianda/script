@@ -6,7 +6,7 @@ class Config:
     def __init__(self):
         self.BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         self.config = ConfigParser.ConfigParser()
-        self.config.read(os.path.join(self.BASE_DIR, 'config/runyuan-monitor.conf'))
+        self.config.read(os.path.join(self.BASE_DIR, 'xxx-monitor.conf'))
 
     def redis_config(self):
         redis_host = self.config.get('redis', "redis_host")
